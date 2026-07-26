@@ -1,0 +1,216 @@
+.parent{
+  display: flex;
+ 
+  gap:30px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    
+}
+
+.top img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.top h2{
+    margin: 2px;
+}
+
+.top h5{
+    margin: 2px;
+}
+
+.tags{
+    display: flex;
+    gap: 10px;
+    font-size: small;
+    margin-top: 10px;
+}
+.tags p{
+    background-color: #f0f0f0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;  
+}
+.stats h5{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.stats p{
+    margin-top: 4px;
+    color: #9b9b9b;
+    font-size: 13px;
+    text-align: center;
+}
+.stat{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    gap:5px;
+    font-weight:bold;
+    font-size:20px;
+}
+.divider{
+    width: 1px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.15);
+}
+.bottom{
+    display: flex;
+    gap:37px;
+}
+/* Container Layout & Card Styling */
+.info_card {
+  width: 250px;
+  padding: 28px;
+  border-radius: 32px;
+  /* Top white to bottom cyan gradient */
+  background: linear-gradient(180deg, #ffffff 0%, #e8f7f9 60%, #cbf2f7 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.top h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.5px;
+}
+
+.top h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags p {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  text-transform: capitalize;
+}
+
+/* Stats Row */
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stats h5 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  text-align: left;
+}
+
+.stats p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px;
+  text-align: left;
+}
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.08); /* Darkened slightly so it shows on light bg */
+}
+
+/* Bottom Action Row */
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bottom button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.bottom button:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Styling the Lucide Bookmark Icon inside a soft white circle */
+.bottom svg {
+  width: 46px;
+  height: 46px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #111827;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  flex-shrink: 0;
+}
