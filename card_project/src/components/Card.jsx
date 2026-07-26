@@ -38,7 +38,6 @@ function Card(props){
                 </div>
 
             </div>
-
             <div className="bottom">
                 <button>Get in touch</button>
 
