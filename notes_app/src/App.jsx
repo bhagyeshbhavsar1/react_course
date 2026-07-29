@@ -61,12 +61,24 @@ const App = () => {
         <br />
         <div id="right" className=" h-80 w-250 rounded-2xl p-4  overflow-auto">
           <div className="flex gap-4 w-max">
-            {task.map(function (elem) {
+            {task.map(function (elem, index) {
+              const deleteTask = () => {
+                /*i is the index position */
+                const updatedList = task.filter((elem, i) => i !== index);
+                setTask(updatedList);
+              };
+
               return (
-                <div className="bg-red-500 h-70 w-80 rounded-2xl shrink-0 p-5 text-white overflow-auto">
+                <div className="bg-red-500 h-70 w-80 rounded-2xl shrink-0 p-5 text-white overflow-auto flex flex-col justify-between">
                   <h3 className="text-4xl break-words">{elem.title}</h3>
-                  <br />
+
                   <p className="leading-tight break-words">{elem.notes}</p>
+                  <button
+                    onClick={deleteTask}
+                    className="bg-black active:bg-white active:text-black rounded text-white p-2 "
+                  >
+                    Delete
+                  </button>
                 </div>
               );
             })}
