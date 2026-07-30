@@ -70,9 +70,9 @@ const App = () => {
 
               return (
                 <div className="bg-red-500 h-70 w-80 rounded-2xl shrink-0 p-5 text-white overflow-auto flex flex-col justify-between">
-                  <h3 className="text-4xl break-words">{elem.title}</h3>
+                  <h3 className="text-4xl wrap-break-word">{elem.title}</h3>
 
-                  <p className="leading-tight break-words">{elem.notes}</p>
+                  <p className="leading-tight wrap-break-word">{elem.notes}</p>
                   <button
                     onClick={deleteTask}
                     className="bg-black active:bg-white active:text-black rounded text-white p-2 "
