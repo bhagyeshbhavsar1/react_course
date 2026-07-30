@@ -1,0 +1,22 @@
+*{
+  background-color: black;
+}
+h1{
+  color:aliceblue;
+}
+.btn{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+button{
+  border: 2px;
+  border-style: solid;
+  color: aliceblue;
+  background-color: black;
+  padding:10px;
+}
